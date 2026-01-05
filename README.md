@@ -95,7 +95,7 @@ After installing the extension from the store:
 ## Privacy and Security
 
 * **Local Storage:** All data is stored locally in `chrome.storage`.
-* **No External Tracking:** No data is sent to external servers or third parties.
+* **No External Tracking:** Absolutely no data is sent to any external servers or third parties.
 * **Scoped Access:** Scripts only run on specified Adobe domains.
 
 ---
