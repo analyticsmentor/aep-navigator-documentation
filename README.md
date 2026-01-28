@@ -1,28 +1,30 @@
+<h1 align="center">AEP Navigator</h1>
+<p align="center">Bookmark & organize all your AEP Orgs, Sandboxes, and launch links to RTCDP, CJA, AJO, etc.</p>
+<h3 align="center">🙋‍♂️ Made by <a href="https://www.linkedin.com/in/rajd33p/">@raj</a></h3>
+<p align="center">
+  <a href='https://buymeacoffee.com/rajdsingh' target='_blank'>
+    <img height='36' style='border:0px;height:36px;' src='https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png' border='0' alt='Buy Me a Coffee' />
+  </a>
+</p>
+<hr />
+
 # AEP Navigator - Chrome Browser Extension Documentation
 
-## Overview
+## Overview:
 
-* **AEP Navigator** is a productivity extension that helps you collect, organize, and launch links to various Adobe Experience Platform (AEP) products and features you frequency visit.
-* It detects your current AEP org and sandbox from the active tab, scrapes categorized links, and renders them in a compact popup and a full dashboard.
-* It lets you add multiple Adobe orgs and keep them visible as chips, and supports inline icons for links for easier visual scanning.
+* AEP Navigator is a powerful productivity extension designed to streamline your workflow by effortlessly collecting, organizing, and launching links across a wide range of Adobe Experience Platform (AEP) services—such as CDP, CJA, AJO, and Data Collection.
+* It intelligently identifies your active AEP organization and sandbox directly from your current browser tab, automatically gathering categorized links and presenting them in a sleek, compact popup as well as a comprehensive dashboard.
+* Manage multiple Adobe organizations and sandboxes with ease, enabling seamless switching between environments without any hassle.
+* Visual clarity is enhanced by displaying organizations and sandboxes as distinct chips, allowing for quick scanning, while all related links are neatly arranged in organized columns for maximum efficiency.
 
-## Key Features
+## Key Features:
 
-* **One-click capture** of the active AEP org, sandbox, and related navigation links.
-* **Clean popup** with three distinct sections and separate message bars:
-  * Header with a button to launch the full dashboard.
-  * **Add New Org** section with its own progress and status messages.
-  * **Added Orgs** section showing org chips and its own messages such as “No org added yet.”
-  * **Quick Links** list that remains unchanged and scrollable.
-
+* **One-click capture** of the active AEP org, all the sandboxes, and the related navigation links.
+* **A clean popup** for the quick links.
 * **Full dashboard view** with:
-  * Centered header title and right-aligned actions.
-  * Centered org and sandbox filters with chips.
-  * Product columns whose link content is centered for readability.
-  * Links displayed as “icon text,” using the AEP page’s inline SVG icon when available.
-
-* **Non-destructive storage** of icons as raw SVG for crisp rendering on any DPI or theme.
-* **Lightweight UI theme** with alternating section backgrounds and consistent spacing.
+  * All the Orgs and Sandbox filters with chips.
+  * All AEP services links are organized in columns.
+  * Links displayed as “icon text,” using the AEP page themes and icons.
 
 ## Supported Environment
 
@@ -31,7 +33,7 @@
 
 * **AEP surfaces at:**
   * `https://experience.adobe.com/*
-  * Also supports Journey Optimizer, Platform Home, and similar AEP apps under the same host.
+  * Also supports Journey Optimizer, CDP home page, Data Collection and similar AEP apps under the same host.
 
 ---
 
@@ -51,9 +53,9 @@ After installing the extension from the store:
 
 ## UI Reference
 
-### Popup UI
+### Popup UI:
 
-* **Header:** Brand/title centered in the header; “Open Dashboard” button on the right.
+* **Header:** Brand/title centered in the header; “Launch Dashboard” button on the right.
 * **Add New Org section:**
   * “Add org” button.
   * Dedicated message area showing detection status, org keys, and progress.
@@ -63,18 +65,17 @@ After installing the extension from the store:
 
 * **Quick Links section:** Renders a scrollable list of links aggregated from your org data.
 
-### Dashboard UI
+### Dashboard UI:
 
-* **Header and actions:** Title centered and three delete buttons aligned to the right. Each button let you delete the selected org, the sandboxaligned or the entire dashboard respectively.
+* **Header and actions:** Title centered and three delete buttons aligned to the right. Each button let you delete the selected org, the sandbox or the entire dashboard respectively.
 * **Filters:** Org and sandbox filters centered with chips for clarity.
-* **Product columns:** * Each product area displays categories and links.
-
+* **Product columns:** * Each AEP service area displays categories and links.
 
 
 
 ---
 
-## How It Works
+## How It Works:
 
 * **Detection:** Checks the active tab’s URL to detect AEP presence and infer the org key from the hash segment.
 * **Scraping:** The background/content script collects categorized links, reading text, `href`, and extracting the first inline SVG icon.
@@ -83,7 +84,7 @@ After installing the extension from the store:
 
 ---
 
-## Usage Tips
+## Usage Tips:
 
 * If “Add org” button reports “No AEP detected,” ensure you are on an active Adobe Experience Platform tab i.e. Data Collection, RTCDP, CJA or AJO. Other pages from AEP or AEC will not work.
 * Use **“Reload Org”** when AEP navigation has changed to refresh links and icons.
@@ -92,7 +93,7 @@ After installing the extension from the store:
 
 ---
 
-## Privacy and Security
+## Privacy and Security:
 
 * **Local Storage:** All data is stored locally in `chrome.storage`.
 * **No External Tracking:** Absolutely no data is sent to any external servers or third parties.
@@ -100,7 +101,7 @@ After installing the extension from the store:
 
 ---
 
-## FAQ
+## FAQ:
 
 * **Can I export my links?** Not built-in yet, but data can be serialized from `chrome.storage`.
 * **Does it support multiple sandboxes?** Yes, sandboxes are reflected in captured links.
